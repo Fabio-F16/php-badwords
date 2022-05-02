@@ -4,7 +4,7 @@ Una parola da censurare viene passata dall'utente tramite parametro GET.
 Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare. -->
 
 <?php
-$paragraf ="Mi sono rotto il cazzo
+$paragraf = "Mi sono rotto il cazzo
 Degli esperimenti del frequentiamoci ma senza impegno
 Stiamo insieme ma non vediamoci che poi ho paura
 Anzi vediamoci quanto ci pare
@@ -91,10 +91,14 @@ $goodParagraf = str_replace($badWord, '***', $paragraf );
 ?>
 
 <h1>Questa è una canzone con il cazzo</h1>
+<pre>
 <p> <?php echo ($paragraf) ?> </p>
+</pre>
 <h3>E la sua lunghezza è <?php echo strlen($paragraf) ?> </h3>
 <hr>
 
 <h1>Questa è una canzone senza il cazzo (tramite $_GET)</h1>
+<pre>
 <p> <?php echo ($goodParagraf) ?> </p>
+</pre>
 <h3>E la sua lunghezza è <?php echo strlen($goodParagraf) ?> </h3>

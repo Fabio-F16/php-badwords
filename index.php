@@ -87,18 +87,18 @@ Giuro che se ti incontro
 Giuro che se ti incontro
 Finisce male";
 $badWord = $_GET["badWord"];
-$goodParagraf = str_replace($badWord, '***', $paragraf );
+$goodParagraf = str_replace($badWord, '***', $paragraf);
 ?>
 
 <h1>Questa è una canzone con il cazzo</h1>
 <pre>
-<p> <?php echo ($paragraf) ?> </p>
+<p> <?php echo($paragraf) ?> </p>
 </pre>
-<h3>E la sua lunghezza è <?php echo strlen($paragraf) ?> </h3>
+<h3>E la sua lunghezza è <?php echo(strlen($paragraf)) ?> </h3>
 <hr>
 
 <h1>Questa è una canzone senza il cazzo (tramite $_GET)</h1>
 <pre>
-<p> <?php echo ($goodParagraf) ?> </p>
+<p> <?php echo($goodParagraf) ?> </p>
 </pre>
-<h3>E la sua lunghezza è <?php echo strlen($goodParagraf) ?> </h3>
+<h3>E la sua lunghezza è <?php echo(strlen($goodParagraf)) ?> </h3>
